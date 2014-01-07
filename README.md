@@ -53,7 +53,7 @@ If we now start the app with `rails s` and go to `http://localhost:3000/location
 
 or
 
-{<1>}![error message in browser](http://www.icnagy.com/content/images/2014/Jan/Screen_Shot_2014_01_08_at_12_07_40_AM.png)
+![error message in browser](http://www.icnagy.com/content/images/2014/Jan/Screen_Shot_2014_01_08_at_12_07_40_AM.png)
 
 So we have to adjust the logic here. We would also would like to hide the location data, nobody want's to fill those out. Let's modify `location.rb`:
 
