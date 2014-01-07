@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from_position: 
+  to_position: 
+
+two:
+  from_position: 
+  to_position: 

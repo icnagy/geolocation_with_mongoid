@@ -1,0 +1,23 @@
+<h1>New location</h1>
+
+<%= render 'form' %>
+  <script>
+      var latitude;
+      var longitude;
+      if (navigator.geolocation) {
+          // Get the user's current position
+          navigator.geolocation.getCurrentPosition(function (position) {
+                      latitude = position.coords.latitude;
+                      longitude = position.coords.longitude;
+                      $("#location_latitude")[0].setAttribute("value", latitude);
+                      $("#location_longitude")[0].setAttribute("value", longitude);
+                  }, function (error) {
+                      console.log(error);
+                  }, { enableHighAccuracy: true, timeout: Infinity, maximumAge: 2 * 60 * 1000 }
+          );
+      } else {
+          alert('Geolocation is not supported in your browser');
+      }
+  </script>
+
+<%= link_to 'Back', locations_path %>
